@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -45,6 +45,7 @@ body.dark-mode .gecklogo {
 .theme-toggle img {
   height: 40px;
   cursor: pointer;
+  margin: 10px;
 }
 
 /* WhatsApp Section */
@@ -169,9 +170,99 @@ body.dark-mode footer {
   color: #df240f;
   border: #1a1a1a;
   box-sizing: border-box;
-  background-color: #99ea1f63;
+  background-color: #ffffff63;
   font-size: 20px;
   
   
+  
+}
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #bfb7b7;
+  border-radius: 5px;
+}
+/* Section heading */
+.page {
+  color: #d01717;
+  text-align: center;
+  background-color: #edefe6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Page body */
+.contact-page {
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  background-size: cover;
+  font-family: cursive;
+  font-size: large;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Home Tab button */
+.home-tab {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #a7f31c8c;
+  color: #0f1010;
+  text-decoration: none;
+  font-family: cursive;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  margin: 10px 0;
+}
+
+.home-tab:hover {
+  background-color: #b93f9a;
+  color: #ffffff;
+}
+
+/* Gmail info */
+.gmail {
+  margin-top: 30px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  width: fit-content;
+  word-spacing: 2px;
+}
+.social-media{
+  margin-top: 20px;
+  font-weight: bold;
+  color: #000;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius:8px ;
+  width: fit-content;
+  word-spacing: 2px;
+  
+}
+.feedback{
+   margin-top: 20px;
+  font-weight: bold;
+  color: #000;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius:8px ;
+  width: fit-content;
+  word-spacing: 2px;
   
 }
