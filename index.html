@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GECK OLX</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GECK OLX - College Used Products Buy/Sell</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,78 +12,83 @@
   <div class="gecklogo">
     <a href="index.html">
       <img src="geck.png" alt="geckicon" height="60" width="60">
-  
     </a>
     <h3 class="sitename">GECK OLX</h3>
-    <div class="nav-links">
-  <a href="index.html">Home</a>
-  <a href="contact.html">Contact</a>
-  <a href="about.html">about</a>
-  
-  
-</div>
-
+    <div class="nav-header">
+      <a href="index.html"><button class="nav-btn">Home</button></a>
+      <a href="contact.html"><button class="nav-btn">Contact</button></a>
+      <a href="about.html"><button class="nav-btn">About</button></a>
+      <a href="login.html"><button class="nav-btn">Log in</button></a>
+    </div>
     <div class="theme-toggle">
       <img src="icons8-dark-mode-50.png" alt="Toggle Dark Mode">
-      
     </div>
   </div>
 
-  <!-- WhatsApp Group Join -->
+  <!-- WhatsApp Section -->
   <section class="join-group">
-    <h2>Click here to join our WhatsApp group:</h2>
-    <a href="https://chat.whatsapp.com/H9XXes4wcZcB8E2kTDc2P4?mode=ac_t" target="_blank" class="whatsapp-btn">
+    <h2> join our WhatsApp group:</h2>
+    <a href="https://chat.whatsapp.com/H9XXes4wcZcB8E2kTDc2P4" target="_blank" class="whatsapp-btn">
       Join WhatsApp Group
     </a>
   </section>
-  <!-- text hover for upi payments-->>
-   <marquee class="hoveri" behavior="scroll" direction="left">This site is made for government engineering college kishanganj unofficial only for students. </marquee>
-<marquee class="hoveri" behavior="scroll" direction="left">SUPPORT BY DONATING TO upi rustamrajbihar@oksbi</marquee>
 
   <!-- Product Section -->
   <section class="product-section">
     <h2 class="head">Current Live Products:</h2>
     <div class="products">
-      <div class="product-card">
+
+      <div class="product-card" data-name="Casio Calculator" data-price="₹00 (Rent)" data-desc="Casio fx-991ES PLUS Calculator, perfect for exams." data-img="casio.jpg">
         <img src="casio.jpg" alt="Product 1">
-        <h3>calci for exam</h3>
-        <p>Price: ₹00 rent</p>
-        <button>Buy Now</button>
+        <h3>Casio Calculator</h3>
+        <p>Price: ₹00 Rent</p>
+        <button class="buy-btn">Buy Now</button>
       </div>
 
-      <div class="product-card">
+      <div class="product-card" data-name="Mini Drafter" data-price="₹450" data-desc="Engineering Mini Drafter, smooth scale movement, perfect for drawing." data-img="download.webp">
         <img src="download.webp" alt="Product 2">
-        <h3>mini drafter</h3>
+        <h3>Mini Drafter</h3>
         <p>Price: ₹450</p>
-        <button>Buy Now</button>
-        <a href="https://chat.whatsapp.com/H9XXes4wcZcB8E2kTDc2P4?mode=ac_t"  target="_blank">
-      click here 
-    </a>
+        <button class="buy-btn">Buy Now</button>
       </div>
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200" alt="Product 3">
-        <h3>coming soon </h3>
-        <p>Price: ₹69.69</p>
-        <button>Buy Now</button>
+      <div class="product-card" data-name="Coming Soon Item" data-price="₹250" data-desc="this is a bed study table for students ." data-img="study table.png">
+        <img src="study table.png" alt="Product 3">
+        <h3>bed study table</h3>
+        <p>Price: ₹250</p>
+        <button class="buy-btn">Buy Now</button>
       </div>
+
     </div>
   </section>
 
- 
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <img id="popup-img" src="" alt="Product Image">
+      <h2 id="popup-title"></h2>
+      <p id="popup-price"></p>
+      <p id="popup-desc"></p>
+      <a id="popup-link" href="https://chat.whatsapp.com/H9XXes4wcZcB8E2kTDc2P4" target="_blank" class="popup-btn">Join WhatsApp Group</a>
+    </div>
+  </div>
+
+
+<div class="Engineers">
+<button id="title-section">
+<h2 >
+  Engineers section:-
+</h2></button>
+
+</div>
+
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 GECK OLX. All rights reserved. | Designed by Rustam</p>
   </footer>
 
-  
- <script>
-  const themeToggle = document.querySelector('.theme-toggle img');
-  themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  });
-</script>
-
-
+  <script src="script.js"></script>
 </body>
-
 </html>
