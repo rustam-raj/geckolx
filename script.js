@@ -1,17 +1,23 @@
-// Dark Mode Toggle
+// 🌙 Dark Mode Toggle
 const themeToggle = document.querySelector('.theme-toggle img');
 themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
 
-// Popup Elements
+// 📱 Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navbar = document.querySelector('.navbar');
+menuToggle.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
+
+// 🛍 Popup Logic
 const popup = document.getElementById("popup");
 const popupTitle = document.getElementById("popup-title");
 const popupPrice = document.getElementById("popup-price");
 const popupDesc = document.getElementById("popup-desc");
 const popupImg = document.getElementById("popup-img");
 
-// Show Popup with Product Info
 document.querySelectorAll(".buy-btn").forEach(button => {
   button.addEventListener("click", (e) => {
     const card = e.target.closest(".product-card");
@@ -23,12 +29,10 @@ document.querySelectorAll(".buy-btn").forEach(button => {
   });
 });
 
-// Close Popup
 function closePopup() {
   popup.style.display = "none";
 }
 
-// Close on outside click
 window.addEventListener("click", (e) => {
-  if (e.target === popup) popup.style.display = "none";
+  if (e.target === popup) closePopup();
 });

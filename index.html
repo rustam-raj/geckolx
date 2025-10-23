@@ -3,63 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GECK OLX - College Used Products Buy/Sell</title>
+  <title>GECK OLX - Buy & Sell Used College Products</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="geck.png">
 </head>
 <body>
 
   <!-- Header -->
-  <div class="gecklogo">
-    <a href="index.html">
-      <img src="geck.png" alt="geckicon" height="60" width="60">
-    </a>
-    <h3 class="sitename">GECK OLX</h3>
-    <div class="nav-header">
-      <a href="index.html"><button class="nav-btn">Home</button></a>
-      <a href="contact.html"><button class="nav-btn">Contact</button></a>
-      <a href="about.html"><button class="nav-btn">About</button></a>
-      <a href="login.html"><button class="nav-btn">Log in</button></a>
+  <header class="header">
+    <div class="logo-section">
+      <a href="index.html">
+        <img src="geck.png" alt="GECK Logo" class="logo">
+      </a>
+      <h3 class="sitename">GECK OLX</h3>
     </div>
+
+    <button class="menu-toggle">&#9776;</button>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+    </nav>
+
     <div class="theme-toggle">
       <img src="icons8-dark-mode-50.png" alt="Toggle Dark Mode">
     </div>
-  </div>
+  </header>
 
   <!-- WhatsApp Section -->
   <section class="join-group">
-    <h2> join our WhatsApp group:</h2>
+    <h2>Join our WhatsApp Group</h2>
     <a href="https://chat.whatsapp.com/H9XXes4wcZcB8E2kTDc2P4" target="_blank" class="whatsapp-btn">
-      Join WhatsApp Group
+      Join Now
     </a>
   </section>
 
   <!-- Product Section -->
   <section class="product-section">
-    <h2 class="head">Current Live Products:</h2>
+    <h2 class="head">Current Live Products</h2>
     <div class="products">
 
       <div class="product-card" data-name="Casio Calculator" data-price="₹00 (Rent)" data-desc="Casio fx-991ES PLUS Calculator, perfect for exams." data-img="casio.jpg">
-        <img src="casio.jpg" alt="Product 1">
+        <img src="casio.jpg" alt="Casio Calculator">
         <h3>Casio Calculator</h3>
         <p>Price: ₹00 Rent</p>
-        <button class="buy-btn">Buy Now</button>
+        <button class="buy-btn">View</button>
       </div>
 
-      <div class="product-card" data-name="Mini Drafter" data-price="₹450" data-desc="Engineering Mini Drafter, smooth scale movement, perfect for drawing." data-img="download.webp">
-        <img src="download.webp" alt="Product 2">
+      <div class="product-card" data-name="Mini Drafter" data-price="₹450" data-desc="Engineering Mini Drafter with smooth movement." data-img="download.webp">
+        <img src="download.webp" alt="Mini Drafter">
         <h3>Mini Drafter</h3>
         <p>Price: ₹450</p>
-        <button class="buy-btn">Buy Now</button>
+        <button class="buy-btn">View</button>
       </div>
 
-      <div class="product-card" data-name="Coming Soon Item" data-price="₹250" data-desc="this is a bed study table for students ." data-img="study table.png">
-        <img src="study table.png" alt="Product 3">
-        <h3>bed study table</h3>
+      <div class="product-card" data-name="Bed Study Table" data-price="₹250" data-desc="Comfortable bed study table for students." data-img="study table.png">
+        <img src="study table.png" alt="Study Table">
+        <h3>Bed Study Table</h3>
         <p>Price: ₹250</p>
-        <button class="buy-btn">Buy Now</button>
+        <button class="buy-btn">View</button>
       </div>
 
     </div>
+  </section>
+
+  <!-- Engineers Section -->
+  <section class="engineer-section">
+    <h2>Engineers Section</h2>
   </section>
 
   <!-- Popup -->
@@ -70,19 +82,11 @@
       <h2 id="popup-title"></h2>
       <p id="popup-price"></p>
       <p id="popup-desc"></p>
-      <a id="popup-link" href="https://chat.whatsapp.com/H9XXes4wcZcB8E2kTDc2P4" target="_blank" class="popup-btn">Join WhatsApp Group</a>
+      <a id="popup-link" href="https://chat.whatsapp.com/H9XXes4wcZcB8E2kTDc2P4" target="_blank" class="popup-btn">
+        Chat on WhatsApp
+      </a>
     </div>
   </div>
-
-
-<div class="Engineers">
-<button id="title-section">
-<h2 >
-  Engineers section:-
-</h2></button>
-
-</div>
-
 
   <!-- Footer -->
   <footer>
